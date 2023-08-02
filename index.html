@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist</title>
+    <link rel="stylesheet" href="./todo.css" />
+  </head>
+  <body>
+    <div class="todolist-contaier">
+      <img src="./flower.jpg" alt="" srcset="" />
+      <div class="todo-wrapper">
+        <h1 class="heading">Todo-List</h1>
+        <div class="add-item-wrapper">
+          <input
+            type="text"
+            name="newitem"
+            id="input-box"
+            placeholder="Add new item"
+          />
+          <button id="additem" type="" onclick="additem()">ADD</button>
+        </div>
+        <ul class="todolist"></ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./todo.js"></script>
+  </body>
+</html>

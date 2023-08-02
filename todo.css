@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    overflow: auto;
+}
+
+
+.todolist-contaier{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden
+}
+
+.heading{
+   font-size: 2rem;
+   color:rgb(0, 47, 148);
+   margin-left: 20px;
+}
+
+.todolist-contaier img{
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index: -1;
+    /* height:100%; */
+    width:100%;
+    filter:blur(4px);
+}
+
+.todo-wrapper{
+    width:600px;
+    background: #fff;
+    /* border:2px solid rgb(255, 255, 255); */
+    border-radius: 40px;
+    padding:8px;
+    
+    z-index: 0;
+}
+
+
+
+
+.add-item-wrapper{
+    margin: 19px 13px;
+    position:relative;
+}
+
+.add-item-wrapper input{
+    width:90%;
+    padding:16px 10px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    color:black;
+    background-color: #e2e2e2;
+}
+
+.add-item-wrapper button{
+    background-color:rgb(251, 74, 15);
+    border:6px solid white;
+    width:90px;
+    height:50px;
+    color:black;
+    padding:8px 14px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+.add-item-wrapper button:hover{
+    background-color: rgb(11, 234, 11);
+}
+
+.todolist{
+    list-style: none;
+    margin: 19px 13px;
+    padding: 8px 2px;
+}
+
+.todo-item{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+   background-color: #f3f3f3;
+   margin:4px 0;
+   padding:10px 50px 10px 20px;
+   border-radius: 16px;
+   position: relative;
+   cursor:pointer;
+}
+
+
+.todo-item span{
+    vertical-align: middle;
+    font-size: 18px;
+    color: rgb(0, 47, 148);
+}
+
+
+
+.close{
+   position:absolute;
+   right:0px;
+   top:0;
+   border-radius: 20px;
+   background:none;
+   outline: none;
+   border:none;
+   height: 100%;
+   width: 8%;
+   cursor: pointer;
+   font-weight: 600;
+   
+}
+
+.close:hover{
+   background-color: rgb(251 74 15);
+   border:5px solid white;
+}
